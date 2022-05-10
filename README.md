@@ -9,3 +9,26 @@ It is written in `html`, with a design made by the `Bootstrap` framework accompa
 * [`README.md`](README.md) the official documentation.
 
 #### Organisation 
+
+ ```text
+.
+├── index.html
+├── LICENSE
+├── README.md
+├── style.css
+└── validator.js
+```
+### Technologies and Developer tools
+
+* IDE (VScode, Sublime Text, others ...)
+* HTML5 
+* CSS3 
+* JQuery - <https://jquery.com/> 
+* Bootstrap - <https://getbootstrap.com/>
+* Cdnjs - <https://cdnjs.com/>  (free open-source CDN services to load library files on your websites )
+
+#### Author 
+* Saliou ([seasayDev](https://github.com/seasayDev))
+
+#### Licence
+* The MIT Licence - [Link](LICENCE)
