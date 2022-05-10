@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootstrap 5-->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <title>Application-Form </title>
+  </head>
+
+  <body>
+    <!--Application Forms--->
+    <div class="container col-12 col-xl-5 col-md-8 col-sm-12 col-xs-12">
+      <form
+        id="registration"
+        action=""
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <fieldset>
+          <legend class="mt-5">
+            <span class="number">1</span> Personal Information
+          </legend>
+
+          <!--name-->
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name"   name="name" />
+          </div>
+          <!--forename-->
+          <div>
+            <label for="fname">Forename:</label>
+            <input type="text" class="form-control" name="fname" id="fname" />
+          </div>
+
+          <!--Birthday-->
+          <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" />
+          </div>
+
+          <!--List of available positions-->
+          <div>
+            <label for="job">List of available positions:</label>
+            <select class="form-control" id="job" name="job">
+              <optgroup label="Sale">
+                <option value="cashier">Cashier</option>
+                <option value="customer-service">
+                  Customer Service
+                </option>
+                <option value="Manager">Manager</option>
+                <option value="guardian">Guardian</option>
+                <option value="warehouseman">Warehouseman</option>
+              </optgroup>
+              <optgroup label="Developer">
+                <option value="Android Developer"> Android Developer </option>
+                <option value="IOS Developer ">IOS Developer</option>
+                <option value="Web Developer" >Web Developer</option>
+              </optgroup>
+              <optgroup label="Manager">
+                <option value="supervisor">Supervisor</option>
+                <option value="Managing director">Managing Director</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!--email-->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" />
+          </div>
+
+          <!--Adress-->
+          <div>
+            <label for="address">Adress:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="address"
+              id="address"
+            />
+          </div>
+
+          <!--Zip code-->
+
+          <div>
+            <label for="zipCode">Zip code:</label>
+            <input
+              type="text"
+              class="form-control"
+              maxlength="7"
+              name="zipCode"
+              placeholder="ex: H3T 2X3 or h3t 2x3"
+              id="zipCode"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span> Files</legend>
+          <!--Upload profile-->
+
+          <div>
+            <label for="profilePicture">Upload your profile picture: </label>
+            <input
+              type="file"
+              name="profilePicture"
+              class="myfile"
+              id="profilePicture"
+            />
+          </div>
+
+          <!--upload CV-->
+          <div>
+            <label for="fileCV">Upload your CV: </label>
+            <input type="file" name="fileCV" class="myfile" id="fileCV" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">3</span> Comments</legend>
+
+          <!--Comment-->
+
+          <label for="comment">Comments:</label>
+          <textarea class="form-control" id="comment" name="comment"></textarea>
+        </fieldset>
+
+        <!--Submit the form-->
+        <input
+          class="btn  btn-lg rounded bg-primary mt-2"
+          name="submit"
+          type="submit"
+          value="Submit"
+        />
+        <!--Reset the form-->
+        <input
+          type="reset"
+          class="btn btn-lg rounded bg-secondary mt-2 mx-2"
+          name="reset"
+          value="Reset"
+        />
+      </form>
+    </div>
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <!--Form validator-->
+    <script src="validator.js"></script>
+
+  </body>
+</html>
