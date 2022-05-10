@@ -119,3 +119,7 @@ textarea.error {
   font-weight: 300;
   color: red;
 }
+
+.mylegend {
+    margin-top: 2vh;
+}
